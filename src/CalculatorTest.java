@@ -3,6 +3,7 @@ import seminars.first.model.Calculator;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+
 public class CalculatorTest {
     public static void main(String[] args) {
         // Проверка базового функционала с целыми числами:
