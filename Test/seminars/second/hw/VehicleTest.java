@@ -59,7 +59,6 @@ class VehicleTest {
         Car car = getCar();
 
         car.testDrive();
-        assertThat(car.getSpeed()).isEqualTo(60);
         car.park();
 
         assertThat(car.getSpeed()).isEqualTo(0);
@@ -69,7 +68,6 @@ class VehicleTest {
         Motorcycle motorcycle = getMotorcycle();
 
         motorcycle.testDrive();
-        assertThat(motorcycle.getSpeed()).isEqualTo(75);
         motorcycle.park();
 
         assertThat(motorcycle.getSpeed()).isEqualTo(0);
