@@ -1,10 +1,11 @@
 package third.tdd;
 
+
 public class User {
 
     String name;
     String password;
-
+    boolean isAdmin = false;
     boolean isAuthenticate = false;
 
     public User(String name, String password, boolean isAdmin) {
@@ -15,6 +16,7 @@ public class User {
 
     //3.6.
     public boolean authenticate(String name, String password) {
+
         return false;
     }
 

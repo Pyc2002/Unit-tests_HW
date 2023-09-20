@@ -1,4 +1,4 @@
-package third.coverage;
+package third.MainHWTest;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,6 +13,8 @@ public class HW3Tests {
     void setUp(){
         number = new MainHW();
     }
+
+
     @Test
     void evenNumbersTest(){
         assertEquals(number.evenOddNumber(2), true);
@@ -22,5 +24,22 @@ public class HW3Tests {
         assertEquals(number.evenOddNumber(5), false);
     }
 
+
+    @Test
+    void numberInIntervalTest(){
+        assertEquals(number.numberInInterval(30), true);
+    }
+    @Test
+    void numberNOTInIntervalTest(){
+        assertEquals(number.numberInInterval(105), false);
+    }
+    @Test
+    void numberNOTInIntervalBorderTest(){
+        assertEquals(number.numberInInterval(24), false);
+    }
+    @Test
+    void numberInIntervalBorderTest(){
+        assertEquals(number.numberInInterval(99), true);
+    }
 
 }
